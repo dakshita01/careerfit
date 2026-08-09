@@ -56,9 +56,7 @@ h2, h3 {
     background: linear-gradient(
         90deg,
         #F8E7A1 0%,
-        #D4AF37 42%,
         #D4AF37 50%,
-        #1A0A0D 58%,
         #F8E7A1 100%
     );
     -webkit-background-clip: text;
