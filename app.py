@@ -59,7 +59,7 @@ h2, h3 {
         #D4AF37 42%,
         #D4AF37 50%,
         #1A0A0D 58%,
-        #000000 100%
+        #F8E7A1 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
