@@ -25,7 +25,7 @@ st.markdown("""
     color: #FFF8F0;
 }
 
-/* Owl in the background */
+# Owl in the background 
 .stApp::before {
     content: "🦉";
     position: fixed;
@@ -38,20 +38,18 @@ st.markdown("""
     pointer-events: none;
 }
 
-/* Keep content above the owl */
+# Keep content above the owl 
 .stApp > div {
     position: relative;
     z-index: 1;
 }
 
-/* CareerFit */
 h1 {
     font-size: 80px !important;
     font-weight: 800 !important;
     color: #FFF8F0 !important;
 }
 
-/* Other main headings */
 h2, h3 {
     background: linear-gradient(
         90deg,
@@ -65,7 +63,7 @@ h2, h3 {
     font-weight: 700;
 }
 
-/* Slightly opaque glass-style text areas */
+# Slightly opaque glass-style text areas 
 div[data-testid="stTextArea"] > div {
     background-color: rgba(255, 255, 255, 0.035) !important;
 }
