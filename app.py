@@ -74,14 +74,12 @@ h2, h3 {
     box-shadow: none !important;
 }
 
-/* Actual visible text box */
 .stTextArea [data-baseweb="base-input"] {
     background: rgba(255, 255, 255, 0.010) !important;
     border: 1px solid rgba(248, 231, 161, 0.18) !important;
     border-radius: 8px !important;
 }
 
-/* Text area */
 .stTextArea textarea {
     background: rgba(255, 255, 255, 0.05) !important;
     background-color: rgba(255, 255, 255, 0.05) !important;
@@ -91,13 +89,11 @@ h2, h3 {
     caret-color: #F8E7A1 !important;
 }
 
-/* Placeholder */
 .stTextArea textarea::placeholder {
     color: rgba(245, 230, 200, 0.35) !important;
     opacity: 1 !important;
 }
 
-/* Focus */
 .stTextArea [data-baseweb="base-input"]:focus-within {
     border-color: rgba(248, 231, 161, 0.10) !important;
     box-shadow: 0 0 0 1px rgba(248, 231, 161, 0.10) !important;
