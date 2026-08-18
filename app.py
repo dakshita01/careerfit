@@ -62,23 +62,46 @@ h2, h3 {
     font-weight: 700;
 }
 
-# Slightly opaque glass-style text areas 
+/* Glass-style text areas */
+
+.stTextArea,
+.stTextArea > div,
+.stTextArea > div > div,
+.stTextArea [data-baseweb="textarea"],
 .stTextArea [data-baseweb="base-input"] {
-    background-color: rgba(255, 255, 255, 0.04) !important;
-    border: 1px solid rgba(248, 231, 161, 0.25) !important;
-    border-radius: 10px !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
+/* Actual visible text box */
+.stTextArea [data-baseweb="base-input"] {
+    background: rgba(255, 255, 255, 0.010) !important;
+    border: 1px solid rgba(248, 231, 161, 0.18) !important;
+    border-radius: 8px !important;
+}
+
+/* Text area */
 .stTextArea textarea {
-    background-color: transparent !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
     color: #F5E6C8 !important;
+    border: none !important;
+    box-shadow: none !important;
     caret-color: #F8E7A1 !important;
 }
 
+/* Placeholder */
 .stTextArea textarea::placeholder {
-    color: rgba(245, 230, 200, 0.55) !important;
+    color: rgba(245, 230, 200, 0.35) !important;
+    opacity: 1 !important;
 }
 
+/* Focus */
+.stTextArea [data-baseweb="base-input"]:focus-within {
+    border-color: rgba(248, 231, 161, 0.10) !important;
+    box-shadow: 0 0 0 1px rgba(248, 231, 161, 0.10) !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
