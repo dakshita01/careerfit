@@ -21,11 +21,11 @@ st.markdown("""
 <style>
 
 .stApp {
-    background:  #24050D;
+    background: #24050D;
     color: #FFF8F0;
+    position: relative;
 }
 
-# Owl in the background 
 .stApp::before {
     content: "🦉";
     position: fixed;
@@ -38,7 +38,6 @@ st.markdown("""
     pointer-events: none;
 }
 
-# Keep content above the owl 
 .stApp > div {
     position: relative;
     z-index: 1;
@@ -64,18 +63,20 @@ h2, h3 {
 }
 
 # Slightly opaque glass-style text areas 
-div[data-testid="stTextArea"] > div {
-    background-color: rgba(255, 255, 255, 0.035) !important;
+.stTextArea [data-baseweb="base-input"] {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(248, 231, 161, 0.25) !important;
+    border-radius: 10px !important;
 }
 
-div[data-testid="stTextArea"] div[data-baseweb="base-input"] {
-    background-color: rgba(255, 255, 255, 0.035) !important;
-    border: 1px solid rgba(248, 231, 161, 0.20) !important;
-}
-
-div[data-testid="stTextArea"] textarea {
+.stTextArea textarea {
     background-color: transparent !important;
     color: #F5E6C8 !important;
+    caret-color: #F8E7A1 !important;
+}
+
+.stTextArea textarea::placeholder {
+    color: rgba(245, 230, 200, 0.55) !important;
 }
 
 </style>
